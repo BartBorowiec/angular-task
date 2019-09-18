@@ -1,0 +1,14 @@
+{
+  "name": "zadanie-angular",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:BartBorowiec/angular-task.git",
+  "author": "Bartek <bartekborowiec91@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  },
+  "scripts": {
+    "start": "http-server ./app -a localhost -p 8000 -c-1 -o"
+  }
+}
