@@ -1,0 +1,8 @@
+<div>
+  <ul>
+    <li ng-repeat="item in $ctrl.items">{{item.id}}: {{item.name}}</li>
+  </ul>
+  <form ng-submit=$ctrl.handleSubmit()>
+    <input type="text" ng-model="$ctrl.newItem"><button>Add</button>
+  </form>
+</div>
