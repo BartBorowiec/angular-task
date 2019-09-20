@@ -17,10 +17,14 @@ angular.
           newItem.name = self.newItem;
           self.newItem = '';
           
-          newItem.$save().then(function() {
+          newItem.$save()
+          .then(function() {
             console.log(newItem);
             
             self.items = Items.query();
+          })
+          .catch(function(error) {
+            console.log(error);
           })
         }
       }
