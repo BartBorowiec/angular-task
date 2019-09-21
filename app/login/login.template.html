@@ -1,7 +1,9 @@
-<div>
-  <form ng-submit="$ctrl.handleSubmit()">
-    <input type="text" ng-model="$ctrl.username">
-    <input type="text" ng-model="$ctrl.password">
-    <button>Login</button>
+<div class="wrapper">
+  <form name="LoginForm" ng-submit="$ctrl.handleSubmit()" class="form">
+    <input id="Username" type="text" ng-model="$ctrl.username" name="Username" required>
+    <label for="Username" ng-show="LoginForm.Username.$touched && LoginForm.Username.$invalid">Login is required</Label>
+    <input type="password" ng-model="$ctrl.password" name="Password" required>
+    <span ng-show="LoginForm.Password.$touched && LoginForm.Password.$invalid">Password is required</span>
+    <button>Login</button><span></span>
   </form>
 </div>

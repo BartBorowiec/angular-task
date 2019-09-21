@@ -1,0 +1,13 @@
+@import "variables";
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    width: 400px;
+}
+
+input {
+    width: 200px;
+}
