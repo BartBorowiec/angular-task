@@ -10,7 +10,6 @@ angular.
           isArray: true,
           interceptor: {
             request: function(request) {
-              console.log(request);
               request.headers = {
                 authorization: window.sessionStorage.getItem('token')
               }

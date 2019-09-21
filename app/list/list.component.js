@@ -11,7 +11,6 @@ angular.
         if (!window.sessionStorage.getItem('token')) {
           $location.path('/login');
         } else {
-          console.log(window.sessionStorage.getItem('token'));
           self.items = Items.query();
 
           self.handleSubmit = function () {
@@ -22,7 +21,6 @@ angular.
             newItem.$save()
               .then(function () {
                 console.log(newItem);
-
                 self.items = Items.query();
               })
               .catch(function (error) {

@@ -1,3 +1,5 @@
+@import "variables";
+
 .list {
     line-height: 1.5;
     margin-bottom: 50px;
@@ -7,12 +9,19 @@
 .formAddNew {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 
     input, button {
         margin: 0;
         box-sizing: border-box;
     }
+
     input {
         margin-right: 20px;
+    }
+
+    span {
+        margin-left: 20px;
+        color: $red;
     }
 }
